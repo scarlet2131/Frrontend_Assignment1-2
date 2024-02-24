@@ -1,0 +1,206 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #a1ffce, #faffd1);
+}
+
+/* Header styling with a gradient wine color */
+header {
+    background: linear-gradient(to right, #641E16, #faffd1); /* Wine color gradient */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h2 {
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0; /* Adjusts the margin for the heading */
+}
+
+/* Navigation bar styling */
+nav {
+    background-color: #4CAF50;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Introduction Section */
+#intro {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #DCF6EA;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+}
+
+/* Timeline Styles for Skills and Experience */
+.timeline {
+    position: relative;
+    max-width: 960px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Profile Image */
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ddd;
+    background-image: url('../images/profile.jpg');
+    margin: 20px auto;
+    background-size: cover;
+    transition: transform 0.5s ease;
+}
+
+.profile-image:hover {
+    transform: scale(1.1); /* Simple zoom effect on hover */
+}
+
+/* Container and Sections Layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    background-color: #f2f2f2; /* Light grey background */
+    padding: 15px;
+}
+
+main, aside {
+    margin-top: 20px;
+}
+
+main section {
+    margin-bottom: 20px;
+}
+
+/* Aside Links Styling */
+aside {
+    background-color: #f2f2f2; /* Light grey background */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners for the aside */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+aside h3 {
+    color: #333; /* Darker color for the heading */
+    margin-bottom: 15px; /* Spacing below the heading */
+}
+
+aside ul, aside ol {
+    list-style-type: none; /* Remove default list styling for ul */
+    padding: 0;
+    margin: 0;
+}
+
+aside ul li, aside ol li {
+    margin-bottom: 10px; /* Space between links */
+}
+
+aside ul li a, aside ol li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #4CAF50; /* Theme color for links */
+    padding: 10px; /* Padding for clickable area */
+    display: block; /* Make the entire area clickable */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+aside ul li a:hover, aside ol li a:hover {
+    background-color: #4CAF50; /* Background color on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Adjustments for Responsive Layouts */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .timeline, .skill-box, .experience-box {
+        width: 100%;
+    }
+
+    .timeline::after {
+        display: none;
+    }
+}
