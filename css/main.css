@@ -161,6 +161,11 @@ aside ul li a:hover, aside ol li a:hover {
     background-color: #4CAF50; /* Background color on hover */
     color: white; /* Text color on hover */
 }
+/* Specific styling for ol to display numbers */
+aside ol {
+    list-style-type: decimal; /* Decimal list styling only applies when needed */
+    list-style-position: inside; /* Positions the numbers inside the list item */
+}
 
 /* Table Styles */
 table {
